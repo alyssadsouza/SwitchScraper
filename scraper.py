@@ -84,5 +84,4 @@ class SwitchScraper(Scraper):
                 }
             )
             data = json.loads(response.body())
-            print(data["hits"])
             self.data += data["hits"]
